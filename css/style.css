@@ -1,0 +1,514 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/*grid for alle statiske elementer på nettsiden */
+#ikoner {
+  display: grid;
+  grid-template-columns: auto;
+  padding: 3%;
+  margin: 0;
+}
+
+/* flexer ikonene og logo*/
+#topp-ikoner {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+
+#sort-strek {
+  height: 1.2px;
+  border: none;
+  background-color: black;
+  margin: 10px 0 10px 0;
+  padding: 0;
+}
+
+/*-------------------*/
+/*Mobil strørrelse*/
+.forside i {
+  font-size: 2rem;
+}
+
+#logo {
+  height: 4rem;
+}
+
+.profil {
+  font-size: 2rem;
+}
+
+.hamburger {
+  font-size: 2rem;
+}
+
+.handlekurv {
+  font-size: 2rem;
+}
+
+
+#nyheter-bilde {
+  width: auto;
+  height: 10rem;
+}
+
+
+#bunn-ikoner {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+/*Creds til chatgpt for å legge inn bakgrunnsbilde*/
+body {
+  background-image: url("../img/luke-chesser-IGtutkXikuc-unsplash.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/*fjerne bort punkter fra logo*/
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.kolleksjon {
+  display: grid;
+  grid-template-columns: auto;
+  justify-content: center;
+}
+
+
+
+.nyheter-section {
+  display: flex;
+  justify-content: center;
+}
+
+
+.katelog-g-j {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  justify-content: space-between;
+}
+
+.katelog {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  justify-content: space-between;
+}
+
+#salg {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+
+
+.footer1 *,
+.footer2 * {
+  list-style: none;
+}
+
+.footer1 {
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+  padding-left: 10%;
+}
+
+.footer2 {
+  display: flex;
+  justify-content: end;
+  flex-direction: column;
+  padding-right: 10%;
+}
+
+body footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+/*fjerne punkter fra alt i main*/
+main * {
+  list-style-type: none;
+}
+
+
+/*Index - Desktop størrelse*/
+@media screen and (min-width : 768px) {
+  #ikoner {
+    display: grid;
+    grid-template-columns: auto;
+    padding: 3%;
+    margin: 0;
+  }
+
+  #topp-ikoner {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+
+  .forside i {
+    font-size: 3rem;
+  }
+
+  #logo {
+    height: 10rem;
+  }
+
+  .profil i {
+    font-size: 3rem;
+  }
+
+  .hamburger i {
+    font-size: 3rem;
+  }
+
+  .handlekurv {
+    font-size: 3rem;
+  }
+
+
+  #nyheter-bilde {
+    width: auto;
+    height: 20rem;
+  }
+
+  #bunn-ikoner {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+
+
+
+  .kolleksjon {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin: 2%;
+    padding-bottom: 10%;
+    justify-content: center;
+
+  }
+
+  /*hjelp fra chatgpt da den fjerner et element som innholder barn(dårlig forklart) eller en ekstra section i dette tilfelle*/
+  .katelog-g-j {
+    display: contents;
+  }
+
+  .katelog-jenter {
+    grid-column: 1;
+
+  }
+
+
+  .nyheter-section {
+    grid-column: 2;
+  }
+
+  .katelog-gutter {
+    grid-column: 3;
+  }
+
+  .katelog {
+    display: none;
+  }
+
+  #bilde-sko {
+    padding-bottom: 10%;
+    margin: 10%;
+  }
+
+  /*salg forsvinner i desktop*/
+  #salg {
+    display: none
+  }
+}
+
+.footer-strek {
+  border-top: 1px solid black;
+}
+
+
+
+/*-------------------*/
+/*produktside - mobil*/
+
+
+.main-produkt {
+  display: grid;
+  grid-template-columns: auto;
+  justify-content: center;
+}
+
+
+
+#produkt-bilde {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  margin: 5%;
+}
+
+#produkt-bilde img {
+  border-radius: 3%;
+  width: 380px;
+}
+
+.price-size-btn {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  margin: 5%;
+}
+
+
+
+
+#btn {
+  width: 30%;
+  max-width: 120px
+}
+
+/*https://uiverse.io/aboalsim114/neat-cow-49*/
+#btn {
+  position: relative;
+  background-color: rgb(34, 70, 230);
+  border-radius: 5px;
+  box-shadow: rgb(121, 18, 55) 0px 4px 0px 0px;
+  padding: 15px;
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+  width: 154px;
+  height: 49px;
+  color: #fff;
+  border: none;
+  font-size: 20px;
+  transition: all .3s ease-in-out;
+  z-index: 1;
+  overflow: hidden;
+}
+
+#btn::before {
+  content: "";
+  background-color: rgb(68, 192, 51);
+  width: 0;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: width 700ms ease-in-out;
+  display: inline-block;
+}
+
+#btn:hover::before {
+  width: 100%;
+}
+
+
+
+#kundevurderinger {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-self: center;
+
+}
+
+.produkt-info {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  text-align: center;
+}
+
+
+/*produkt - Desktop størrelse*/
+@media screen and (min-width : 768px) {
+  .main-produkt {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto auto;
+    justify-content: center;
+  }
+
+  #kundevurderinger {
+    grid-column: 5;
+    grid-row: 1;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    margin: 10%;
+    padding: 2%;
+  }
+
+  .produkt-bilde-section {
+    grid-column: 4;
+    grid-row: 1;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    margin: 5%;
+  }
+
+  .price-size-btn {
+    grid-column: 3;
+    grid-row: 1;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    margin: 10%;
+  }
+
+  .produkt-info {
+    grid-column: 2;
+    grid-row: 1/2;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    margin: 5%;
+  }
+
+  #price {
+    font-size: 2rem;
+    padding-right: 1.5rem;
+    padding-top: 1rem;
+    margin: 5%;
+  }
+
+  #sizing {
+    font-size: 1.4rem;
+    padding-top: 6rem;
+    margin: 0;
+  }
+
+  #btn {
+    margin-top: 1.5rem;
+    margin-right: 1.5rem;
+  }
+
+}
+
+/*-------------------*/
+/*Mobil - sortering*/
+
+.vertikal-linje {
+  border-left: 2px solid rgb(0, 0, 0);
+  height: 150px;
+  width: 1px;
+  margin-left: 50px;
+  margin-top: 0;
+}
+
+.thick-strek {
+  height: 3px;
+  border: none;
+  background-color: black;
+  margin: 10px 0 10px 0;
+}
+
+.filter-og-tomfilter {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  margin: 5%;
+  font-size: 1rem;
+}
+
+.filter {
+  font-size: 1rem;
+}
+
+.produkter {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: 5%;
+  gap: 5%;
+  font-size: 1rem;
+}
+
+
+
+/*Sortering - Desktop*/
+
+@media screen and (min-width : 768px) {
+
+  .thick-strek {
+    display: none;
+  }
+
+  .filter {
+    font-size: 2rem;
+  }
+
+  main aside h4 {
+    font-size: 1.5rem;
+  }
+
+
+  .filter-og-tomfilter {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 5%;
+    font-size: 2rem;
+    padding-top: 20%;
+    flex-direction: row;
+    flex-shrink: 0;
+  }
+
+  .filter h4 {
+    display: none;
+  }
+
+  .vertikal-linje {
+    height: 80%;
+    order:3;
+  }
+
+  .filter{
+    order:1 ;
+    margin-top: 18%;
+  }
+
+  .tom-filter {
+    order: 2;
+  }
+
+
+  .produkter {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 5%;
+    gap: 5%;
+    font-size: 2rem;
+  }
+
+  .main-sortering {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto auto;
+    justify-content: center;
+  }
+
+  
+  
+ 
+}

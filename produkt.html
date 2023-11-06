@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="nb">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Forside</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/f943edb462.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <!-- Grupperte ikoner, logo og søkefelt-->   
+            <section id="ikoner">
+                <ul id="topp-ikoner">
+                    <li><a href="index.html"  class="forside"><i class="fa-solid fa-house"></i></a></li>
+                    <!-- la inn en klikkbar logo-->
+                    <li><a href="index.html"><img src="img/logo.png" id="logo" alt="#"></a></li>
+                    <li><a href="min-profil.html" class="profil"><i class="fa-solid fa-user"></i></a></li>   
+                </ul>
+                <ul id="bunn-ikoner">
+                    <li><a href="meny.html" class="hamburger"><i class="fa-solid fa-bars"></i></a></li>
+                    <li><input type="text" id="searchbar" placeholder="Søk.."></li>
+                    <li><a href="handlekurv.html" class="handlekurv"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                </ul>
+            </section>
+            <!-- Ze black line-->
+            <hr id="sort-strek">
+            </nav>
+    </header>
+    <main class="main-produkt">
+        <!-- produktbilde -->
+        <section class="produkt-bilde-section">
+            <picture id="produkt-bilde">
+                <img src="img/shoe-1865995_640.jpg" alt="#">
+            </picture>
+
+
+        </section>
+
+        <section class="price-size-btn">
+            <section id="price">
+                <section  >
+                    <h2>PRIS</h2>
+                </section>
+            </section>
+           
+    
+                <!-- velg skostørrelse -->
+            <section id="sizing">
+                <h3>str</h3>
+                <select name="sko-str">
+                    <option value="">- -</option>
+                    <option value="">20</option>
+                    <option value="">21</option>
+                    <option value="">22</option>
+                    <option value="">23</option>
+                    <option value="">24</option>
+                    <option value="">25</option>
+                    <option value="">26</option>
+                    <option value="">27</option>
+                    <option value="">28</option>
+                    <option value="">29</option>
+                    <option value="">30</option>
+                </select>
+            </section>
+    
+              <!-- kjøp knapp -->
+           <section>
+                <button id="btn">
+                    <i class="fa-solid fa-stop"></i>
+                    kjøp
+                </button>
+             </section>
+        </section>
+
+        <section class="produkt-info">
+            <h1>Produktnavn</h1>
+            <h2>Spesifikasjoner</h2>
+            <article>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus molestie mollis eros non sodales. Suspendisse potenti. Etiam mi magna, sodales nec erat sed, posuere cursus dui. In auctor, eros vitae rhoncus rhoncus, dolor nulla ultrices diam, id luctus est ligula ut ligula. Quisque luctus fermentum urna            
+            </article>  
+        </section>
+
+        <section id="kundevurderinger">
+            <h3>Kundevurderinger</h3>
+            <h4>10 - vurderinger</h4>
+            <h5>5/5 fra kjøper 1</h5>
+            <h5>4/5 fra kjøper 2</h5>
+            <h5>4/5 fra kjøper 3</h5>
+            <h6>Les mer</h6>
+        </section>       
+    </main>
+    <footer class="footer-strek">
+        <aside class="footer1">
+            <ul>
+                <li>Kundeservice</li>
+                <li>frakt og retur</li>
+                <li>Ofte stilte spørsmål</li>
+            </ul>
+        </aside>
+        <aside class="footer2">
+            <ul>
+                <li>Om oss</li>
+                <li>Kjøpsvilkår</li>
+                <li>30 dagers åpent kjøp</li>
+            </ul>
+        </aside>
+    </footer>
+</body>
