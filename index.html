@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Forside</title>
+    <meta name="description" content="Forside">
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,16 +17,42 @@
             <!-- Grupperte ikoner, logo og søkefelt-->   
             <section id="ikoner">
                 <ul id="topp-ikoner">
-                    <li><a href="index.html"  class="forside"><i class="fa-solid fa-house"></i></a></li>
+                    <li><a href="index.html" aria-label="home-icon"  class="forside"><i class="fa-solid fa-house"></i></a></li>
                     <!-- la inn en klikkbar logo-->
                     <li><a href="index.html"><img src="img/logo.png" id="logo" alt="#"></a></li>
-                    <li><a href="min-profil.html" class="profil"><i class="fa-solid fa-user"></i></a></li>   
+                    <li><a href="min-profil.html" aria-label="profil" class="profil"><i class="fa-solid fa-user"></i></a></li>   
                 </ul>
-                <ul id="bunn-ikoner">
-                    <li><a href="meny.html" class="hamburger"><i class="fa-solid fa-bars"></i></a></li>
-                    <li><input type="text" id="searchbar" placeholder="Søk.."></li>
-                    <li><a href="handlekurv.html" class="handlekurv"><i class="fa-solid fa-cart-shopping"></i></a></li>
-                </ul>
+            <ul id="bunn-ikoner">
+                <li><a class="hamburger"><i class="fa-solid fa-bars"></i></a>
+                    <ul class="dropdown">
+                        <li><a href="#">Link 1</a></li>
+                        <li><a href="#">Link 2</a></li>
+                        <li><a href="#">Link 3</a></li>
+                    </ul>
+                </li>
+                <li><input type="text" id="searchbar" aria-label="søkefelt--"  placeholder="Søk.."></li>
+                <li><a href="handlekurv.html" aria-label="handlekurv" class="handlekurv"><i class="fa-solid fa-cart-shopping"></i></a></li>
+            </ul>
+            <script>
+            /* When the user clicks on the button, toggle between hiding and showing the dropdown content */
+            document.querySelector(".hamburger").addEventListener("click", function() {
+                this.nextElementSibling.classList.toggle("show");
+            });
+
+            // Close the dropdown menu if the user clicks outside of it
+            window.onclick = function(event) {
+                if (!event.target.matches('.hamburger')) {
+                    var dropdowns = document.getElementsByClassName("dropdown");
+                    var i;
+                    for (i = 0; i < dropdowns.length; i++) {
+                        var openDropdown = dropdowns[i];
+                        if (openDropdown.classList.contains('show')) {
+                            openDropdown.classList.remove('show');
+                        }
+                    }
+                }
+            }
+            </script>
             </section>
             <!-- Ze black line-->
             <hr id="sort-strek">
@@ -86,3 +113,4 @@
     </footer>
     
 </body>
+</html>
