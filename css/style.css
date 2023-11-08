@@ -2,41 +2,6 @@
   box-sizing: border-box;
 }
 
-/* Gjemmer dropdown-menyen som standard */
-.dropdown {
-  display: none;
-  position: absolute;  /* Plasserer dropdown-menyen i forhold til nærmeste relativt posisjonerte foreldre */
-  background-color: #f9f9f9; /* Bakgrunnsfarge for dropdown-menyen */
-  min-width: 160px; /* Minimum bredde for dropdown-menyen */
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); /* Skyggeeffekt for dropdown-menyen */
-  z-index: 1; /* Sikrer at dropdown-menyen ligger over andre elementer */
-}
-
-/* Viser dropdown-menyen når den har klassen 'show' */
-.dropdown.show {
-  display: block;
-}
-
-/* Stil for lenker inne i dropdown-menyen */
-.dropdown a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
-
-/* Endrer bakgrunnsfarge når man holder musepekeren over lenker */
-.dropdown a:hover {
-  background-color: #f1f1f1;
-}
-
-/* Stil for hamburger-ikonet */
-.hamburger {
-  display: inline-block;
-  cursor: pointer;
-}
-
-
 body {
   font-family: 'Roboto', sans-serif;
   margin: 0;

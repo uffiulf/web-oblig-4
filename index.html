@@ -20,39 +20,13 @@
                     <li><a href="index.html" aria-label="home-icon"  class="forside"><i class="fa-solid fa-house"></i></a></li>
                     <!-- la inn en klikkbar logo-->
                     <li><a href="index.html"><img src="img/logo.png" id="logo" alt="#"></a></li>
-                    <li><a href="min-profil.html" aria-label="profil" class="profil"><i class="fa-solid fa-user"></i></a></li>   
+                    <li><a href="analyse.html" aria-label="profil-til-analyse" class="profil"><i class="fa-solid fa-user"></i></a></li>   
                 </ul>
             <ul id="bunn-ikoner">
-                <li><a class="hamburger"><i class="fa-solid fa-bars"></i></a>
-                    <ul class="dropdown">
-                        <li><a href="#">Link 1</a></li>
-                        <li><a href="#">Link 2</a></li>
-                        <li><a href="#">Link 3</a></li>
-                    </ul>
-                </li>
+                <li><a href="analyse.html" aria-label="hamburger-meny-til-analyse.html"  class="hamburger"><i class="fa-solid fa-bars"></i></a></li>
                 <li><input type="text" id="searchbar" aria-label="søkefelt--"  placeholder="Søk.."></li>
                 <li><a href="handlekurv.html" aria-label="handlekurv" class="handlekurv"><i class="fa-solid fa-cart-shopping"></i></a></li>
             </ul>
-            <script>
-            /* When the user clicks on the button, toggle between hiding and showing the dropdown content */
-            document.querySelector(".hamburger").addEventListener("click", function() {
-                this.nextElementSibling.classList.toggle("show");
-            });
-
-            // Close the dropdown menu if the user clicks outside of it
-            window.onclick = function(event) {
-                if (!event.target.matches('.hamburger')) {
-                    var dropdowns = document.getElementsByClassName("dropdown");
-                    var i;
-                    for (i = 0; i < dropdowns.length; i++) {
-                        var openDropdown = dropdowns[i];
-                        if (openDropdown.classList.contains('show')) {
-                            openDropdown.classList.remove('show');
-                        }
-                    }
-                }
-            }
-            </script>
             </section>
             <!-- Ze black line-->
             <hr id="sort-strek">
@@ -107,7 +81,7 @@
             <ul>
                 <li>Om oss</li>
                 <li>Kjøpsvilkår</li>
-                <li>30 dagers åpent kjøp</li>
+                <a href="analyse.html" aria-label="analyse"><li>Analyse nettside</li></a>
             </ul>
         </aside>
     </footer>
