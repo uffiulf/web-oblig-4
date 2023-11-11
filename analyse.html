@@ -22,28 +22,85 @@
                 <article>
                     <h3>Nøkkelord som ble valgt:</h3>
                     <p>skobutikk og nike</p>
-                    <p>Jeg valgte disse da skobutikk er på norsk og søkemotoren vil finne resultater i norge. Nike valgte jeg fordi det er et populært merke. </p>
-                </article>
-            </section>
-            <section>
-                <h2>Velkommen til forsiden</h2>
-                <p>Her skal det være en kort beskrivelse av hva siden handler om</p>
-            </section>
-            <section>
-                <h2>Velkommen til forsiden</h2>
-                <p>Her skal det være en kort beskrivelse av hva siden handler om</p>
-            </section>
-        </main>
-        <article>
-            
-        </article>
-        <nav>
-            <ul>
-                <li>
+                    <article>
+                        <p>Jeg valgte disse da skobutikk er på norsk og søkemotoren vil finne resultater i Norge,
+                        </p> og Nike fordi det er et populært merke. </p>
+                    </article>
                     
-                </li>
-            </ul>
-        </nav>
+                </article>
+                <div class="skjermdump">
+                    <a href="img/analyse/analyse/google-trend-skobutikk.png"><img src="/img/analyse/analyse/google-trend-skobutikk.png"  alt="skjermdump-google-trend-skobutikk"><p>klikk her</p></a>
+                    <p>Skjermdump fra google trends: skobutikk</p>
+                    <a href="img/analyse/analyse/google-trend-nike.png"> <img src="img/analyse/analyse/google-trend-nike.png" alt="skjermdump-google-trend-nike"> <p>Klikk her</p> </a>
+                    <p>Skjermdump fra google trends: nike</p>
+                </div>
+            </section>
+            <hr>
+            <section>
+                <h2>SEO analyse</h2>
+                <h3>forside (index.html)</h3>
+                <ul>
+                    <li>
+                        <p>Kjørte nettsiden min i lighthouse for første gang</p>
+                        <p>Resultater:</p>
+                        <img src="/img/analyse/index/første analyse lighthouse.png" class="lighthouse-skjermdump-1" alt="lighthouse resultater nr 1">
+                    </li>
+                    <li>
+                        <p>Forsiden etter fiks:</p>
+                        <img src="img/analyse/index/index-etter-lighthouse.png" alt="lighthouse resultater etter fiks">
+                    </li>
+                    <h3>sortering.html</h3>
+                    <li>
+                        <p>Første lighthouse analyse på sortering.html:</p>
+                        <img src="img/analyse/sortering/sortering-lighthouse.png" alt="første lighthouse resultater på sortering.html">
+                    </li>
+                    <li>
+                        <p>Fikk feil på best practices da oppløsningen var for lav på bilde jeg brukte som placeholder. </p>
+                        <p>Jeg ignorer denne feilen da formålet med placeholder er å kun bli brukt i demo.</p>
+                        <img src="img/analyse/sortering/sortering-lighthouse-low-resolution.png" alt="skjermdump lighthouse lav oppløsningen på sortering.html placeholder">
+                    </li>
+                    <li>
+                        <p></p> 
+                        <article>
+                            Feilen jeg fikk var pga en plugin i chrome som heter "Last Pass", denne ble avinnstallert og nå fikk jeg en god score:
+                        </article>
+                        <p></p>
+                        <img src="img/analyse/sortering/sortering-best-practices-etter-fiks-lighthouse.png" alt="">
+                    </li>
+                    <h3>produkter.html</h3>
+                    <li>
+                        <p>Dette er første sjekk fra lighthouse:</p>
+                        <img src="img/analyse/produkt/produkter-lighthouse-nr1.png" alt="første resultater fra lighthouse på produkter.html">
+                        <p>Scoren var ganske bra så vi går videre!</p>
+                    </li>
+                </ul>
+            <hr>
+            <h4>Webaim analyse</h4>
+            <h5>forside (index.html)</h5>
+            <section>
+                <ul>
+                    <li>
+                        <p>Da er vi igang med Webaim:</p>
+                        <img src="img/analyse/index/webaim1.png" class="webaim1" alt="webaim første resultat">
+                        <a href="img/analyse/index/webaim1.png">Klikk her</a>
+                        <p>Fikk en del feil, men det var enkelt å rette dem. Det var kun å navngi ikonene med aria-label:</p>
+                        <img src="img/analyse/index/webaim2.png" class="webaim1" alt="">
+                        <p>Etter fiks:</p>
+                        <img src="img/analyse/index/webaim-index-etter-fiks.png" class="webaim1" alt="">
+                        <article>
+                            <p>Jeg får fortsatt feil om kontrast, dette ble rettet ved å bokse rundt en solid farge slik:</p>
+                        </article>
+                        <img src="img/analyse/analyse/footer-strek.png" alt="">
+                        <p>Da gikk det fra slik:</p>
+                        <img src="img/analyse/analyse/webaim-footer-feil.png" alt="">
+                        <p>til slik:</p>
+                        <img src="img/analyse/analyse/webaim-footer-fix.png" alt="">
+                        <p>dette er resultatene fra webaim etter fiks:</p>
+                        <img src="img/analyse/analyse/webaim-end-result.png" alt="">
+                    </li>
+                </ul>
+            </section>        
+            
+        </main>
     </body>
-
 </html>
