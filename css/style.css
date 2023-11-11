@@ -124,12 +124,17 @@ nav ul {
   justify-content: center;
 }
 
+.footer-strek {
+  background-color: #333; 
+  color: white; 
+  padding: 20px; 
+}
+
 
 .footer1 *,
 .footer2 * {
   list-style: none;
   text-emphasis-color: black;
-  font-style: bold;
   font-size: large;
 }
 
