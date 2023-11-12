@@ -530,4 +530,10 @@ main * {
   }
 
 
+  a:focus, button:focus, input:focus {
+    outline: 3px solid #cc002c; 
+    outline-offset: 2px;    
+}
+
+
 }
