@@ -1,0 +1,51 @@
+.midtstilt-kropp * {
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    list-style-type: none;
+
+}
+
+.skjermdump *{
+    width: 60%;
+    max-height: fit-content;
+}
+
+hr {
+    width: 100%;
+    border: 1px solid rgb(63, 80, 155);
+}
+
+.lighthouse-skjermdump-1{
+    width: 60%;
+    max-height: fit-content;
+}
+
+.webaim1{
+    width: 60%;
+    max-height: fit-content;
+}
+
+
+.liten-overskrift{
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.table-grid{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-table *{
+    border: 1px solid rgb(0, 0, 0);
+}
+
+.container-items *{
+    border: 1px solid rgb(0, 0, 0);
+}
