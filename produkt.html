@@ -31,20 +31,21 @@
             <hr id="sort-strek">
             </nav>
     </header>
-    <main class="main-produkt">
+    <main class="main-produkt" itemscope itemtype="http://schema.org/Product">
         <!-- produktbilde -->
         <section class="produkt-bilde-section">
             <picture id="produkt-bilde">
-                <img src="img/shoe-1865995_640.jpg" alt="#">
+                <img src="img/shoe-1865995_640.jpg" itemprop="image" alt="Produktbilde av sko">
             </picture>
 
 
         </section>
 
         <section class="price-size-btn">
-            <section id="price">
+            <section id="price" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
                 <section  >
-                    <h2>PRIS</h2>
+                    <h2 itemprop="price">PRIS</h2>
+                    <meta itemprop="priceCurrency" content="NOK">
                 </section>
             </section>
            
@@ -78,9 +79,9 @@
         </section>
 
         <section class="produkt-info">
-            <h1>Produktnavn</h1>
+            <h1 itemprop="name">Produktnavn</h1>
             <h2>Spesifikasjoner</h2>
-            <article>
+            <article temprop="description">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus molestie mollis eros non sodales. Suspendisse potenti. Etiam mi magna, sodales nec erat sed, posuere cursus dui. In auctor, eros vitae rhoncus rhoncus, dolor nulla ultrices diam, id luctus est ligula ut ligula. Quisque luctus fermentum urna            
             </article>  
         </section>
@@ -111,3 +112,4 @@
         </aside>
     </footer>
 </body>
+</html>
